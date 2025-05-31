@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 21
+          distribution: temurin
       - name: Build artifacts
         run: ./gradlew build
       - name: Upload build artifacts
