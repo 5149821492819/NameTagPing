@@ -14,6 +14,8 @@ jobs:
         with:
           java-version: 21
           distribution: temurin
+      - name: make gradle wrapper executable
+        run: chmod +x ./gradlew
       - name: Build artifacts
         run: ./gradlew build
       - name: Upload build artifacts
